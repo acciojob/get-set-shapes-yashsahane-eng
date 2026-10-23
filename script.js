@@ -1,7 +1,29 @@
 //complete this code
-class Rectangle {}
+class Rectangle {
+	constructor(width,height){
+		this._width=width;
+		this._height=height;
+	}
+	get width(){
+		return this._width;
+	}
+	get height(){
+		return this._height;
+	}
+	get Area(){
+		return this.width * this.height;
+	}
+}
 
-class Square extends Animal {}
+class Square extends Animal {
+	constructor(side){
+		super(side , side);
+		}
+	get perimeter(){
+		return 4*this.width;
+	
+	}
+}
 
 // Do not change the code below this line
 window.Rectangle = Rectangle;
